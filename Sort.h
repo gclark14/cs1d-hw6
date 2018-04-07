@@ -6,6 +6,7 @@
 #define HW6_SORT_H
 
 #include "iostream"
+#include "fstream"
 
 // Indicate the big oh value for all functions
 
@@ -18,6 +19,10 @@
 class Sort {
 private:
 
+    std::string *words;
+    int CAP;
+
+
 public:
 
     // Define this method here
@@ -26,11 +31,11 @@ public:
     // Define
     void print(std::ostream &out);
 
-    virtual void sort() = 0;
+    //virtual void sort() = 0;
 
     // Allocates an array data member
     // constructor should take a parameter for maximum capacity of array
-    Sort(const int CAP);
+    explicit Sort(int cap);
 
     // Dealocate the array
     ~Sort();
