@@ -11,10 +11,11 @@
 class InsertionSort : public Sort {
 private:
 
-
 public:
 
+    void sort() override;
 
+    InsertionSort(int CAP);
 
 };
 

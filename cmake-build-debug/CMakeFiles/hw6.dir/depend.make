@@ -8,6 +8,7 @@ CMakeFiles/hw6.dir/InsertionSort.cpp.obj: ../Sort.h
 CMakeFiles/hw6.dir/Sort.cpp.obj: ../Sort.cpp
 CMakeFiles/hw6.dir/Sort.cpp.obj: ../Sort.h
 
+CMakeFiles/hw6.dir/main.cpp.obj: ../InsertionSort.h
 CMakeFiles/hw6.dir/main.cpp.obj: ../Sort.h
 CMakeFiles/hw6.dir/main.cpp.obj: ../main.cpp
 

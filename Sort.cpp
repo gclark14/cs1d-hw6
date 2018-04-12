@@ -15,7 +15,7 @@ void Sort::insertAllFromFile(char *fileName, int numItemsToLoad) {
 
     int i = 0;
     std::string s;
-    while(getline(fin, s) and i < CAP) {
+    while(getline(fin, s) and i < numItemsToLoad) {
         words[i] = s;
         i++;
     }
@@ -23,7 +23,7 @@ void Sort::insertAllFromFile(char *fileName, int numItemsToLoad) {
 
 void Sort::print(std::ostream &out) {
     for(int i = 0; i < CAP; i++){
-        out << words[i] << '\n';
+        out << *(words + i) << '\n';
     }
 
 }
@@ -35,4 +35,26 @@ Sort::~Sort() {
 Sort::Sort(const int cap) {
     words = new std::string[cap];
     CAP = cap;
+}
+
+Sort::Sort() {
+
+}
+
+std::string *Sort::getWords() const {
+    return words;
+}
+
+int Sort::getCAP() const {
+    return CAP;
+}
+
+void Sort::setCAP(int CAP) {
+    Sort::CAP = CAP;
+}
+
+void swap(std::string str1, std::string str2) {
+    std::string temp = str1;
+    str1 = str2;
+    str2 = temp;
 }

@@ -19,11 +19,19 @@
 class Sort {
 private:
 
+protected:
     std::string *words;
     int CAP;
 
-
 public:
+
+    friend void swap(std::string str1, std::string str2);
+
+    std::string *getWords() const;
+
+    int getCAP() const;
+
+    void setCAP(int CAP);
 
     // Define this method here
     void insertAllFromFile(char *fileName, int numItemsToLoad);
@@ -31,11 +39,13 @@ public:
     // Define
     void print(std::ostream &out);
 
-    //virtual void sort() = 0;
+    virtual void sort() = 0;
 
     // Allocates an array data member
     // constructor should take a parameter for maximum capacity of array
     explicit Sort(int cap);
+
+    Sort();
 
     // Dealocate the array
     ~Sort();
