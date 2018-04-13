@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/hw6.dir/main.cpp.obj"
   "CMakeFiles/hw6.dir/Sort.cpp.obj"
   "CMakeFiles/hw6.dir/InsertionSort.cpp.obj"
+  "CMakeFiles/hw6.dir/QuickSort.cpp.obj"
   "hw6.pdb"
   "hw6.exe"
   "hw6.exe.manifest"

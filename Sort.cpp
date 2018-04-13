@@ -4,7 +4,7 @@
 
 #include "Sort.h"
 
-void Sort::insertAllFromFile(char *fileName, int numItemsToLoad) {
+void Sort::insertAllFromFile(const char *fileName, int numItemsToLoad) {
     std::ifstream fin;
     fin.open(fileName);
 
@@ -22,7 +22,7 @@ void Sort::insertAllFromFile(char *fileName, int numItemsToLoad) {
 }
 
 void Sort::print(std::ostream &out) {
-    for(int i = 0; i < CAP; i++){
+    for(int i = 0; i < length; i++){
         out << *(words + i) << '\n';
     }
 
@@ -34,7 +34,7 @@ Sort::~Sort() {
 
 Sort::Sort(const int cap) {
     words = new std::string[cap];
-    CAP = cap;
+    length = cap;
 }
 
 Sort::Sort() {
@@ -46,11 +46,11 @@ std::string *Sort::getWords() const {
 }
 
 int Sort::getCAP() const {
-    return CAP;
+    return length;
 }
 
 void Sort::setCAP(int CAP) {
-    Sort::CAP = CAP;
+    Sort::length = CAP;
 }
 
 void swap(std::string str1, std::string str2) {

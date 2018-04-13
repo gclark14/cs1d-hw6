@@ -21,7 +21,7 @@ private:
 
 protected:
     std::string *words;
-    int CAP;
+    int length;
 
 public:
 
@@ -34,7 +34,7 @@ public:
     void setCAP(int CAP);
 
     // Define this method here
-    void insertAllFromFile(char *fileName, int numItemsToLoad);
+    void insertAllFromFile(const char *fileName, int numItemsToLoad);
 
     // Define
     void print(std::ostream &out);

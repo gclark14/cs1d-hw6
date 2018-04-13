@@ -3,5 +3,5 @@ project(hw6)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp Sort.cpp InsertionSort.cpp)
+set(SOURCE_FILES main.cpp Sort.cpp InsertionSort.cpp QuickSort.cpp QuickSort.h)
 add_executable(hw6 ${SOURCE_FILES})

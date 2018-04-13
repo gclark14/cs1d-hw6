@@ -15,7 +15,7 @@ public:
 
     void sort() override;
 
-    InsertionSort(int CAP);
+    explicit InsertionSort(int CAP);
 
 };
 

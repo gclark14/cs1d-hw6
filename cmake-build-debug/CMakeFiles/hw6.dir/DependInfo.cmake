@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Gabe/School/cs1d/hw6/InsertionSort.cpp" "C:/Users/Gabe/School/cs1d/hw6/cmake-build-debug/CMakeFiles/hw6.dir/InsertionSort.cpp.obj"
-  "C:/Users/Gabe/School/cs1d/hw6/Sort.cpp" "C:/Users/Gabe/School/cs1d/hw6/cmake-build-debug/CMakeFiles/hw6.dir/Sort.cpp.obj"
-  "C:/Users/Gabe/School/cs1d/hw6/main.cpp" "C:/Users/Gabe/School/cs1d/hw6/cmake-build-debug/CMakeFiles/hw6.dir/main.cpp.obj"
+  "C:/Users/Gabriel/School/CS1D/cs1d-hw6/InsertionSort.cpp" "C:/Users/Gabriel/School/CS1D/cs1d-hw6/cmake-build-debug/CMakeFiles/hw6.dir/InsertionSort.cpp.obj"
+  "C:/Users/Gabriel/School/CS1D/cs1d-hw6/QuickSort.cpp" "C:/Users/Gabriel/School/CS1D/cs1d-hw6/cmake-build-debug/CMakeFiles/hw6.dir/QuickSort.cpp.obj"
+  "C:/Users/Gabriel/School/CS1D/cs1d-hw6/Sort.cpp" "C:/Users/Gabriel/School/CS1D/cs1d-hw6/cmake-build-debug/CMakeFiles/hw6.dir/Sort.cpp.obj"
+  "C:/Users/Gabriel/School/CS1D/cs1d-hw6/main.cpp" "C:/Users/Gabriel/School/CS1D/cs1d-hw6/cmake-build-debug/CMakeFiles/hw6.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
