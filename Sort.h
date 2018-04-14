@@ -25,7 +25,7 @@ protected:
 
 public:
 
-    friend void swap(std::string str1, std::string str2);
+    friend void swap(std::string &str1, std::string &str2);
 
     std::string *getWords() const;
 

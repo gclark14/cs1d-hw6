@@ -17,12 +17,16 @@ public:
 
     explicit QuickSort(int CAP);
 
-    void quickSort(int left, int right);
 
     int partition(int left, int right, int pivot);
 
-    std::string medianOfThree(std::string a, std::string b, std::string c);
+    int medianOfThree(std::string a, std::string b, std::string c);
 
+    void selectionSort(int a, int b);
+
+    int partition(int LEFT, int RIGHT);
+
+    void quickSort(int left, int right);
 };
 
 

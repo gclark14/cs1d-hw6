@@ -19,6 +19,7 @@ void Sort::insertAllFromFile(const char *fileName, int numItemsToLoad) {
         words[i] = s;
         i++;
     }
+    fin.close();
 }
 
 void Sort::print(std::ostream &out) {
@@ -53,7 +54,7 @@ void Sort::setCAP(int CAP) {
     Sort::length = CAP;
 }
 
-void swap(std::string str1, std::string str2) {
+void swap(std::string &str1, std::string &str2) {
     std::string temp = str1;
     str1 = str2;
     str2 = temp;

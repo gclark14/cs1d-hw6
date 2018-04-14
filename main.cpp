@@ -3,10 +3,10 @@
 #include "InsertionSort.h"
 #include "QuickSort.h"
 
-void measure(std::string type, int size, std::string fileName);
+void measure(const std::string &type, int size, const std::string &fileName);
 
-void measure(std::string type, const int size, std::string fileName) {
-    if(type == "insertion" or type == "Insertion"){
+void measure(const std::string &type, const int size, const std::string &fileName) {
+    if(type == "insertionSort" or type == "InsertionSort" or type == "insertionsort"){
         InsertionSort insertionSort(size);
 
         std::cout << fileName << '\n';
@@ -24,17 +24,18 @@ void measure(std::string type, const int size, std::string fileName) {
         quickSort.print(std::cout);
     }
 
-    // elif quick
     // else heap
 
 }
 
 int main(int argc, char** argv) {
 
-    //measure("InsertionSort", 100, "random.txt");
+    measure("InsertionSort", 100, "random.txt");
     std::cout << "\n\n\n\n\n";
     measure("QuickSort", 100, "random.txt");
 
+    int d;
+    std::cin >> d;
 
     return 0;
 }
